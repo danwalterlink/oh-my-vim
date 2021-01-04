@@ -1,35 +1,16 @@
-"
-"                       __   _(_)_ __ ___  _ __ ___
-"                       \ \ / / | '_ ` _ \| '__/ __|
-"                        \ V /| | | | | | | | | (__
-"                       (_)_/ |_|_| |_| |_|_|  \___|
-"
-" Author: Xianzhe Liang <liangxianzhe@gmail.com>
-" Source: https://github.com/liangxianzhe/oh-my-vim
-
-" Setup language {{{ ==========================================================
+" COMPATIBILITIES ==============================================================
 
 " language en_US.UTF-8           " Solve some plugins incompatibilities
-
-" }}}
-
 set nocompatible             " No to the total compatibility with the ancient vi
 
-" TODO use vimscript to check update, this will leave some blank lines after
-" leaving vim
-silent !sh $OH_MY_VIM/tools/check_for_upgrade.sh
-
-" Load external configuration before anything else {{{
+" EXTERNAL CONFIG ==============================================================
 
 let s:before_vimrc = expand('~/.before.vimrc')
 if filereadable(s:before_vimrc)
     exec ':so ' . s:before_vimrc
 endif
-" }}}
-"
-" NEOBUNDLE {{{ ===============================================================
 
-" NeoBundle auto-installation and setup {{{
+" PLUGIN MANAGER : DEIN ========================================================
 
 " Auto installing NeoBundle
 let iCanHazNeoBundle=1
@@ -40,6 +21,8 @@ if !filereadable(neobundle_readme)
     echo ""
     execute "silent !mkdir -p ".$OH_MY_VIM."/bundle"
     execute "silent !git clone https://github.com/Shougo/neobundle.vim ".$OH_MY_VIM."/bundle/neobundle.vim"
+
+    execute "silent !git curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
     let iCanHazNeoBundle=0
 endif
 
@@ -86,7 +69,7 @@ NeoBundleLazy 'osyo-manga/unite-quickfix', {'autoload':{'unite_sources':
 NeoBundleLazy 'osyo-manga/unite-fold', {'autoload':{'unite_sources':'fold'}}
 NeoBundleLazy 'tacroe/unite-mark', {'autoload':{'unite_sources':'mark'}}
 NeoBundleLazy 'tsukkee/unite-tag', {'autoload':{'unite_sources':'tag'}}
-NeoBundleLazy 'Shougo/neomru.vim', {'autoload':{'unite_sources': 
+NeoBundleLazy 'Shougo/neomru.vim', {'autoload':{'unite_sources':
             \['file_mru', 'directory_mru']}}
 
 " }}}
@@ -124,8 +107,7 @@ NeoBundle 'vim-airline/vim-airline-themes'
 
 " }}}
 
-call neobundle#end()
-" END BUNDLES }}}
+" END BUNDLES {{{
 
 " <Leader> & <LocalLeader> mapping {{{
 
@@ -141,7 +123,6 @@ let g:unite_source_menu_menus = {}
 " menu prefix key (for all Unite menus) {{{
 nnoremap [menu] <Nop>
 nmap <LocalLeader> [menu]
-" }}}
 
 " menus menu
 nnoremap <silent>[menu]u :Unite -silent -winheight=20 menu<CR>
@@ -157,9 +138,11 @@ endif
 
 " }}}
 
+" END NEOBUNDLE {{{
 
-" END NEOBUNDLE }}}
+call neobundle#end()
 
+" }}}
 
 " IMPORT PACKAGES {{{
 
@@ -172,7 +155,7 @@ for package in g:oh_my_vim_packages
 endfor
 
 " Indent and plugins by filetype. Need to turn it on after importing packages.
-filetype plugin indent on      
+filetype plugin indent on
 
 " END IMPORT PACKAGES }}}
 
