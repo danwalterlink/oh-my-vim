@@ -10,7 +10,7 @@ if filereadable(s:before_vimrc)
     exec ':so ' . s:before_vimrc
 endif
 
-" PLUGIN MANAGER : DEIN ========================================================
+" PLUGIN MANAGER : NEOBUNDLE ========================================================
 
 " Auto installing NeoBundle
 let iCanHazNeoBundle=1

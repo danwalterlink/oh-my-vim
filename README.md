@@ -4,7 +4,7 @@ __Version 0.95  (2014-04-22)__
 
 Out-of-box vim config for everyone. It is well organaized and easy to use.
 
-E.g. open Unite UI interface and find the grep feature, search a string in 
+E.g. open Unite UI interface and find the grep feature, search a string in
 current folder, preview results, and open selected files.
 
 ![intro](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/intro.gif?raw=true "intro")
@@ -18,9 +18,9 @@ install some necessory tools and the latest vim (7.4) *with lua support*.
 
     curl -L https://raw.github.com/liangxianzhe/oh-my-vim/master/tools/prepare_mac.sh | sh
 
-For Linux, there is no script yet. You need to figure out what the above script 
-does, and install them according (apt-get etc). Please note a vim with lua 
-support is required. 
+For Linux, there is no script yet. You need to figure out what the above script
+does, and install them according (apt-get etc). Please note a vim with lua
+support is required.
 
 ## 2. Install oh-my-vim:
 
@@ -44,52 +44,52 @@ the vim and re-open it, then you are all set.
 
 # Configuration
 
-You can overwrite the default configuration and key bindings by creating one of 
+You can overwrite the default configuration and key bindings by creating one of
 following files:
 
 `~/.before.vimrc` will be loaded before everything else.
 
 `~/.local.vimrc` will be loaded after bundles are initialized and before
 the settings take place. The idea was so people could add Bundle lines
-without having to worry about conflicts in vimrc when pulling. 
+without having to worry about conflicts in vimrc when pulling.
 
-`~/.after.vimrc` will be loaded after all configuration options are set. 
+`~/.after.vimrc` will be loaded after all configuration options are set.
 This is the best place to change default behaviour (keybindings) or
 color scheme.
 
-# Acknowledgments 
+# Acknowledgments
 
 Obviously I steal a lot work from others. Here is my special thanks to:
 
-Joe Di Castro (joedicastro)'s 
-[dotfiles](https://github.com/joedicastro/dotfiles/tree/master/vim). Most part 
-of this config is copied from Joe, including large amount of this README.  His 
+Joe Di Castro (joedicastro)'s
+[dotfiles](https://github.com/joedicastro/dotfiles/tree/master/vim). Most part
+of this config is copied from Joe, including large amount of this README.  His
 idea of using Unite to create UI is brilliant.
 
-[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). Copied it's name and 
+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). Copied it's name and
 some scripts.
 
 # Usage
 
 Most shortcuts start with either `,` or `<space>`:
-> `<Leader>` key is mapped to `,` 
+> `<Leader>` key is mapped to `,`
 
 > `<LocalLeader>` key is mapped to `<space>`
 
-> `<LocalLeader>u` i.e. `<space>u` will trigger the awesome Unite UI 
+> `<LocalLeader>u` i.e. `<space>u` will trigger the awesome Unite UI
 
 Oh-my-vim features are organized as packages, while each package is just a
 .vimrc file. Modulization is good because:
 
 - Each package is short and easy to follow.
-- You can easily add a new package (such as java or ruby) and send a pull-request. 
-- You can ignore the package you don't need by setting a parameter 
+- You can easily add a new package (such as java or ruby) and send a pull-request.
+- You can ignore the package you don't need by setting a parameter
 `g:oh-my-vim_packages` in local.vimrc.
 
 The packages list:
 
 - [basic](#basic) - some basic vim config to make it easy to use
-- [code](#code) - general coding 
+- [code](#code) - general coding
 - [text](#text) - text edition
 - [grep](#grep) - search text in files
 - [searching](#searching) - search text in current buffer
@@ -100,7 +100,7 @@ The packages list:
 - [python](#python) - python
 - [web](#web) - web
 - [bookmarks](#bookmarks) - bookmarks
-- [vim](#vim) - vim 
+- [vim](#vim) - vim
 - [neobundle](#neobundle) - plugins administration with neobundle
 - [spelling](#spelling) - spell checking & translation
 - [markdown](#markdown) - markdown
@@ -130,8 +130,8 @@ The main Unite munu:
 
 ### Navigation inside Unite
 
-In Unite, you can filter result in Insert mode, you can select candidates and 
-apply operations to selected candidates in Normal mode. Below are some of the 
+In Unite, you can filter result in Insert mode, you can select candidates and
+apply operations to selected candidates in Normal mode. Below are some of the
 available mappings:
 
 > __Mappings__
@@ -189,7 +189,7 @@ available mappings:
 ## Basic
 
 Put most basic vim config here, like indent, quick saving, history, backup.
-There is no Unite menu for this package.  
+There is no Unite menu for this package.
 
 <a id="code"></a>
 ## Code
@@ -373,7 +373,7 @@ easily.
 
     ![smartinput](http://joedicastro.com/static/pictures/smartinput_en.gif "smartinput")
 
-- __neocomplete__ auto-completion of keywords, methods, functions, etc by only
+- __deoplete__ auto-completion of keywords, methods, functions, etc by only
   typing a few letters (normally the first). Well used, this speeds up a lot writing
   of code or text. It improves the Vanilla Vim auto-completion, with a live
   fuzzy-logic search. It's powerful and totally customizable.
@@ -1182,7 +1182,7 @@ __Unite__
 
 __Other tools__
 
-- `T` Translate selected text to Chinese. 
+- `T` Translate selected text to Chinese.
 
 <a id="markdown"></a>
 ## Markdown
@@ -1324,7 +1324,7 @@ this tool is a sure candidate for a disaster.
 - __loremipsum__ <https://github.com/vim-scripts/loremipsum>
 - __molokai__ <https://github.com/tomasr/molokai>
 - __neobundle.vim__ <https://github.com/Shougo/neobundle.vim>
-- __neocomplete.vim__ <https://github.com/Shougo/neocomplete.vim>
+- __deoplete.vim__ <https://github.com/Shougo/deoplete.vim>
 - __po.vim--gray__ <https://github.com/vim-scripts/po.vim--gray>
 - __python-mode__ <https://github.com/klen/python-mode>
 - __summerfruit256.vim__ <https://github.com/vim-scripts/summerfruit256.vim>
