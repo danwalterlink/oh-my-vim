@@ -10,7 +10,7 @@ if [ -d "$OH_MY_VIM" ]; then
 fi
 
 echo "\033[0;34mCloning Oh My Vim...\033[0m"
-hash git >/dev/null 2>&1 && /usr/bin/env git clone https://github.com/liangxianzhe/oh-my-vim.git $OH_MY_VIM || {
+hash git >/dev/null 2>&1 && /usr/bin/env git clone https://github.com/danwalterlink/oh-my-vim.git $OH_MY_VIM || {
   echo "git not installed"
   exit
 }
@@ -42,7 +42,7 @@ echo "\033[0;32m"'  ____  __     __  _____  __  _   ________  ___  '"\033[0m"
 echo "\033[0;32m"' / __ \/ /    /  |/  /\ \/ / | | / /  _/  |/  /  '"\033[0m"
 echo "\033[0;32m"'/ /_/ / _ \  / /|_/ /  \  /  | |/ // // /|_/ /   '"\033[0m"
 echo "\033[0;32m"'\____/_//_/ /_/  /_/   /_/   |___/___/_/  /_/    '"\033[0m"
-                                                  
+
 echo "\n\n \033[0;32mPlease look over the ~/.vimrc file to select plugins, themes, and options.\033[0m"
 echo "\n\n \033[0;32mThen open you vim and it will install plugins for you.\033[0m"
 echo "\n\n \033[0;32mEnjoy!.\033[0m"

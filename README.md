@@ -7,7 +7,7 @@ Out-of-box vim config for everyone. It is well organaized and easy to use.
 E.g. open Unite UI interface and find the grep feature, search a string in
 current folder, preview results, and open selected files.
 
-![intro](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/intro.gif?raw=true "intro")
+![intro](https://github.com/danwalterlink/oh-my-vim-image/blob/master/intro.gif?raw=true "intro")
 
 # How to install
 
@@ -16,7 +16,7 @@ current folder, preview results, and open selected files.
 For Mac OS, you can just run the [script](/tools/prepare_mac.sh). It will
 install some necessory tools and the latest vim (7.4) *with lua support*.
 
-    curl -L https://raw.github.com/liangxianzhe/oh-my-vim/master/tools/prepare_mac.sh | sh
+    curl -L https://raw.github.com/danwalterlink/oh-my-vim/master/tools/prepare_mac.sh | sh
 
 For Linux, there is no script yet. You need to figure out what the above script
 does, and install them according (apt-get etc). Please note a vim with lua
@@ -26,7 +26,7 @@ support is required.
 
 Run: [tools/install.sh](tools/install.sh)
 
-    curl -L https://raw.github.com/liangxianzhe/oh-my-vim/master/tools/install.sh | sh
+    curl -L https://raw.github.com/danwalterlink/oh-my-vim/master/tools/install.sh | sh
 
 It will be installed to ~/.oh-my-vim folder.
 
@@ -126,7 +126,7 @@ key-mappings. You can always refer the menu for something you don't
 remember the shortcut.
 
 The main Unite munu:
-![unite_menu](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu.png?raw=true "unite_menu")
+![unite_menu](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu.png?raw=true "unite_menu")
 
 ### Navigation inside Unite
 
@@ -194,7 +194,7 @@ There is no Unite menu for this package.
 <a id="code"></a>
 ## Code
 
-![unite code](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu_code.png?raw=true "unite code")
+![unite code](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu_code.png?raw=true "unite code")
 
 __Unite__
 
@@ -251,7 +251,7 @@ visual selections, and text transformations into the snippets.
 <a id="code"></a>
 ## Text
 
-![unite text](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu_text.png?raw=true "unite text")
+![unite text](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu_text.png?raw=true "unite text")
 
 This menu groups several options to edit text
 
@@ -412,7 +412,7 @@ easily.
 <a id="grep"></a>
 ## Grep
 
-![unite grep](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu_grep.png?raw=true "unite grep")
+![unite grep](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu_grep.png?raw=true "unite grep")
 
 This menu allows us to search files by regular expression engines. I have it
 configured to use the `ag` program first, then `ack` if `ag` is not found, and
@@ -948,7 +948,7 @@ __Other tools__
 <a id="python"></a>
 ## Python
 
-![unite python](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu_python.png?raw=true "unite python")
+![unite python](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu_python.png?raw=true "unite python")
 
 __Unite__
 
@@ -1053,7 +1053,7 @@ __Unite__
 <a id="vim"></a>
 ## Vim
 
-![unite vim](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu_vim.png?raw=true "unite vim")
+![unite vim](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu_vim.png?raw=true "unite vim")
 
 __Unite__
 
@@ -1174,7 +1174,7 @@ These are the menu entries in detail:
 <a id="spelling"></a>
 ## Spell checking & translation
 
-![unite spelling](https://github.com/liangxianzhe/oh-my-vim-image/blob/master/unite_menu_spelling.png?raw=true "unite spelling")
+![unite spelling](https://github.com/danwalterlink/oh-my-vim-image/blob/master/unite_menu_spelling.png?raw=true "unite spelling")
 
 __Unite__
 
